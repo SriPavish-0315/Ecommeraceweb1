@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .First{
+            z-index: 1;
+           position: fixed;
+           top: 0vh;
+            width: 100vw;
+            height: 12vh;
+             background: linear-gradient(to right , rgb(213, 213, 213) , white);
+        }
+        .Second{
+            position: relative;
+            width: 100vw;
+            height: 88vh;
+            top: 12vh;
+            background: linear-gradient(to left , dodgerblue , navy);
+        }
+        .F1{
+            width: 30vw;
+            height: 12vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            color: dodgerblue;
+            position: absolute;
+            left: 5vw;
+            font-weight: bolder;
+        }
+        .F2{
+            color: dodgerblue;
+            width: 60vw;
+            height: 6vh;
+            display: flex;
+            font-size: x-large;
+            align-items: center;
+            justify-content: space-evenly;
+            position: absolute;
+            right: 0vw;
+            top:6vh ;
+
+        }
+        .S1{
+            transition: all 2s ease;
+            font-size: x-large;
+            color: white;
+            width: 35vw;
+            height: 50vh;
+            position: absolute;
+            top: 30vh;
+            left: 5vw;
+        }
+        .Second:hover .S1{
+            top: 20vh;
+            left: 5vw;
+        }
+        .S2{
+            width: 35vw;
+            height: 50vh;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 20vh;
+            right: 5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .S2 img{
+            width: 33vw;
+            height: 48vh;
+        }
+        
+        .F2d{
+            transition: all ease 1s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 160px;
+            height: 40px;
+            
+        }
+        .F2d:hover{
+            background-color: dodgerblue;
+            color: white;
+            border-radius: 10px;
+            
+        }
+    
+        input{
+            display: block;
+            width: 300px;
+            height: 40px;
+            margin-bottom: 40px;
+        }
+        button{
+            width: 300px;
+            height: 45px;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 10px;
+            font-size: large;
+        }
+        ::placeholder{
+            font-size: larger;
+            color: black;
+            padding-left: 40px;
+        }
+        button:hover{
+            background-color: dodgerblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="First">
+       <div class="F1">
+         <h1>Chan's Consultancy </h1>
+       </div>
+       <div class="F2">
+        <div class="F2d">Home</div>
+        <div class="F2d">About</div>
+        <div class="F2d">Services</div>
+        <div class="F2d">Contact</div>
+        <div class="F2d">Login</div>
+       </div>
+    </div>
+
+
+    <div class="Second">
+        <div class="S1">
+            <h1>Best Consultancy</h1>
+            <h2>dosdhsdhsodhjs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis possimus est eveniet odio consectetur perferendis magni. Amet nulla harum, possimus praesentium vitae maxime doloremque suscipit! Perspiciatis totam placeat illum at!</p>
+        </div>
+        <div class="S2">
+            <img src="https://thumbs.dreamstime.com/b/consulting-expert-advice-support-service-business-concept-97202115.jpg" alt="">
+        </div>
+        
+    </div>
+</body>
+</html>
